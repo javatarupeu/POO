@@ -1,1 +1,6 @@
+<<<<<<< HEAD
+Hola
+Jose
+=======
 hola soy erick darwin quispe supo
+>>>>>>> 0f4b6461735da663e0e42600a8dcad887ddddae1
