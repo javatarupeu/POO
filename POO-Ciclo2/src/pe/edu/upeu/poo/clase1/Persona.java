@@ -29,5 +29,12 @@ public class Persona {
 		return anioActual - anioNacimiento;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Persona [nombres=" + nombres + ", apePaterno=" + apePaterno + ", apeMaterno=" + apeMaterno + ", altura="
+				+ altura + ", dni=" + dni + ", celular=" + celular + ", fechaNacimiento=" + fechaNacimiento + ", email="
+				+ email + ", tipoSangre=" + tipoSangre + ", direccion=" + direccion + ", religion=" + religion
+				+ ", sexo=" + sexo + ", estadoCivil=" + estadoCivil + ", vive=" + vive + "]";
+	}
+
 }
