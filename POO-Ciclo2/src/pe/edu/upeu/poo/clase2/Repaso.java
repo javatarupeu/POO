@@ -24,10 +24,12 @@ public class Repaso {
 		 */
 
 		System.out.println(!true);
-		
-		
+
 		System.out.println("Calculando el IGV");
-		System.out.println("IGV: "+r.calcIGV(100));
+		System.out.println("IGV: " + r.calcIGV(100));
+
+		System.out.println("Calculando el IMC:");
+		System.out.println("Su IMC es: " + r.calcIMC(85, 1.72));
 
 	}
 
@@ -41,9 +43,9 @@ public class Repaso {
 
 		return monto * igv / 100;
 	}
-	
-//	public double calcIMC(){
-//		
-//	}
+
+	public double calcIMC(double peso, double altura) {
+		return peso / Math.pow(altura, 2);
+	}
 
 }
