@@ -10,7 +10,7 @@ public class Pregunta3 {
 		int n = scan.nextInt();
 
 		for (int i = 1; i <= n; i++) {
-			System.out.println(i * 2);
+			System.out.println((i * 2)-1);
 		}
 
 	}

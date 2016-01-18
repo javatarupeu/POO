@@ -16,9 +16,19 @@ public class Persona {
 	String tipoSangre;
 	String direccion;
 	String religion;
-	String sexo;
-	String estadoCivil;
+	EstadoCivil estadoCivil = new EstadoCivil();
+	Sexo sexo = new Sexo();
+	String estadoCivil1;
 	Boolean vive;
+	Ropa ropa;
+	
+	 
+	
+
+	public Persona(Sexo sexo) {
+		super();
+		this.sexo = sexo;
+	}
 
 	public int getEdad() {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy");

@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Persona jesus = new Persona();
+		Persona jesus = new Persona(new Sexo());
 		jesus.nombres = "Jesus Josue";
 		jesus.apePaterno = "Mariaca";
 		jesus.apeMaterno = "Mamani";
@@ -18,8 +18,8 @@ public class Main {
 		jesus.tipoSangre = "O+";
 		jesus.direccion = "Jr. Sinchi Roca 824";
 		jesus.religion = "Cristiano";
-		jesus.sexo = "Masculino";
-		jesus.estadoCivil = "Casado";
+//		jesus.sexo = "Masculino";
+		jesus.estadoCivil1 = "Casado";
 		jesus.vive = true;
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
