@@ -27,4 +27,16 @@ public class Util {
 		return resultado;
 	}
 
+	public String convertirACadena(int a) {
+		return Integer.toString(a);
+	}
+	
+	public String convertirACadena(int a, int b) {
+		return Integer.toString(a);
+	}
+
+	public String convertirACadena(double a) {
+		return Double.toString(a);
+	}
+
 }

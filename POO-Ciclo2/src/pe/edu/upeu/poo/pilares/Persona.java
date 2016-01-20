@@ -1,39 +1,33 @@
-package pe.edu.upeu.poo.clase1;
+package pe.edu.upeu.poo.pilares;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Persona {
+import pe.edu.upeu.poo.clase1.EstadoCivil;
+import pe.edu.upeu.poo.clase1.Sexo;
 
+public class Persona {
 	private String nombres;
 	private String apePaterno;
 	private String apeMaterno;
 	private Double altura;
 	private String dni;
-	private String celular;
 	private Date fechaNacimiento;
-	private String email;
 	private String tipoSangre;
 	private String direccion;
-	private String religion;
 	private EstadoCivil estadoCivil = new EstadoCivil();
 	private Sexo sexo = new Sexo();
-	private String estadoCivil1;
 	private Boolean vive;
-	private Ropa ropa;
 
-	/***
-	 * Metodo Constructor de la clase Persona
-	 * 
-	 * @param sexo
-	 */
-	public Persona() {
-		super();
+	public void caminar() {
+		System.out.println("Caminar");
 	}
 
-	public Persona(Sexo sexo) {
-		super();
-		this.sexo = sexo;
+	public void respirar() {
+		System.out.println("Respirar");
+	}
+
+	public void comer() {
+		System.out.println("Comer");
 	}
 
 	public String getNombres() {
@@ -76,28 +70,12 @@ public class Persona {
 		this.dni = dni;
 	}
 
-	public String getCelular() {
-		return celular;
-	}
-
-	public void setCelular(String celular) {
-		this.celular = celular;
-	}
-
 	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
 	public void setFechaNacimiento(Date fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public String getTipoSangre() {
@@ -116,14 +94,6 @@ public class Persona {
 		this.direccion = direccion;
 	}
 
-	public String getReligion() {
-		return religion;
-	}
-
-	public void setReligion(String religion) {
-		this.religion = religion;
-	}
-
 	public EstadoCivil getEstadoCivil() {
 		return estadoCivil;
 	}
@@ -140,45 +110,12 @@ public class Persona {
 		this.sexo = sexo;
 	}
 
-	public String getEstadoCivil1() {
-		return estadoCivil1;
-	}
-
-	public void setEstadoCivil1(String estadoCivil1) {
-		this.estadoCivil1 = estadoCivil1;
-	}
-
 	public Boolean getVive() {
 		return vive;
 	}
 
 	public void setVive(Boolean vive) {
 		this.vive = vive;
-	}
-
-	public Ropa getRopa() {
-		return ropa;
-	}
-
-	public void setRopa(Ropa ropa) {
-		this.ropa = ropa;
-	}
-
-	public int getEdad() {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-		Date now = new Date();
-		int anioActual = Integer.parseInt(sdf.format(now));
-		int anioNacimiento = Integer.parseInt(sdf.format(fechaNacimiento));
-
-		return anioActual - anioNacimiento;
-	}
-
-	@Override
-	public String toString() {
-		return "Persona [nombres=" + nombres + ", apePaterno=" + apePaterno + ", apeMaterno=" + apeMaterno + ", altura="
-				+ altura + ", dni=" + dni + ", celular=" + celular + ", fechaNacimiento=" + fechaNacimiento + ", email="
-				+ email + ", tipoSangre=" + tipoSangre + ", direccion=" + direccion + ", religion=" + religion
-				+ ", sexo=" + sexo + ", estadoCivil=" + estadoCivil + ", vive=" + vive + "]";
 	}
 
 }
