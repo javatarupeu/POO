@@ -7,8 +7,4 @@ Twitter: @jesusSempai
 
 
 Teoria
-http://goo.gl/forms/8OMsbmo7PE
-
-
-Practica
-https://docs.google.com/document/d/1WVB2dC1Sg3W-GIUZeLDBFXeHlQW4GnadEAYwbIcF-nE/pub
+http://goo.gl/forms/iM2NGrnh9v
